@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    color: aliceblue;
+    background-color: rgb(244, 240, 243);
+}
+h2{
+    text-align: center;
+    font-size: 2vw;
+}
+.section-container{
+    min-width: 28vw;
+    padding: 3rem;
+    background-color: rgb(90, 152, 206);
+    border-radius:  0.75rem;
+}
+.input-container{
+    margin-top: 2rem ;
+    font-size: 1.4vw; 
+}
+input{
+    margin-top: 1rem ;
+    font-size: 1.4vw;
+    padding: .6rem ;
+    width: 100%;
+    border-radius: 0.75rem;
+    border: none;
+    outline: none;
+    background-color: aliceblue;
+}
+.select-container img{
+    min-width: 3.5rem;
+}
+.select-container{
+    margin-top: .3rem;
+    display: flex;
+    width: 8rem;
+    height: 3rem;
+    border: 0.1rem solid aliceblue;
+    border-radius: 0.75rem;
+    background-color: aliceblue;
+}
+.icon>i{
+    font-size: 2.3vw;
+}
+.dropdown{
+    margin-top: 1.5rem ;
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.4vw;
+}
+.msg{
+    margin-top: 2.5rem ;
+    font-size: 1.5vw;
+}
+select, option{
+    font-size: 1vw;
+    border-radius:  0.75rem;
+    border: none;
+    outline: none;
+    background-color: aliceblue;
+}
+button{
+    margin-top: 2rem ;
+    font-size: 1.4vw;
+    padding:.6rem;
+    background-color:rgb(249, 232, 232);
+    border: none;
+    border-radius: 0.75rem;
+    transition: all 300ms ease;
+    width: 100%;
+}
+button:hover{
+    color:black;
+    background-color:rgb(227, 222, 222);
+    cursor: pointer;
+  
+}
+select{
+    padding: .3rem 0;
+    width: 100%;
+}
+
+/* Media Quaries */
+@media only screen and (max-width: 1000px){
+    h2{
+        font-size: 2.2vw;
+    }
+    .section-container{
+        min-width: 35vw;
+        padding: 3rem;
+    }
+    .input-container{
+        margin-top: 1rem ;
+        font-size: 1.5vw; 
+    }
+    input{
+        margin-top: 1rem ;
+        font-size: 1.5vw;
+        padding: .7rem .5rem ;
+    }
+    .select-container{
+        width: 8rem;
+        height: 2.8rem;
+    }
+    .icon>i{
+        font-size: 2.5vw;
+    }
+    .msg{
+        margin-top: 2.5rem ;
+        font-size: 2vw;
+    }
+    select, option{
+        font-size: 1.5vw;
+    }
+    button{
+        margin-top: 1rem ;
+        font-size: 2vw;
+        padding:.6rem;
+    }
+    .placeholder, .from-name, .to-name{
+        font-size: 2vw;
+    }
+}
+
+@media only screen and (max-width: 750px){
+    h2{
+        font-size: 2.5vw;
+        margin-bottom: 1.5rem;
+    }
+    .section-container{
+        min-width: 34vw;
+        padding: 3rem;
+    }
+    .input-container{
+        margin-top: 1rem ;
+        font-size: 1.7vw; 
+    }
+    input{
+        margin-top: 1rem ;
+        font-size: 1.7vw;
+        padding: .7rem .5rem ;
+    }
+    .select-container{
+        width: 8rem;
+        height: 2.6rem;
+    }
+    .msg{
+        margin-top: 2.4rem ;
+        font-size: 2.2vw;
+    }
+    select, option{
+        font-size: 1.5vw;
+    }
+    button{
+        margin-top: 1rem ;
+        font-size: 2.2vw;
+        padding:.6rem;
+    }
+    .placeholder, .from-name, .to-name{
+        font-size: 2.2vw;
+    }
+}
+@media only screen and (max-width : 640px) {
+    h2{
+        font-size: 3vw;
+        margin-bottom: 1.5rem;
+    }
+    .section-container{
+        min-width: 30vw;
+        padding: 2rem;
+    }
+    .input-container{
+        font-size:2vw; 
+    }
+    input{
+        font-size: 2vw;
+    }
+    .select-container{
+        height: 2.5rem;
+    }
+    .msg{
+        margin-top: 2.2rem ;
+        font-size: 2.5vw;
+    }
+    .icon>i{
+        font-size: 3vw;
+    }
+    select, option{
+        font-size: 2vw;
+    }
+    button{
+        margin-top: 1.5rem;
+        font-size: 2.5vw;
+    }
+    .placeholder, .from-name, .to-name{
+        font-size: 2.6vw;
+    }
+}
+@media only screen and (max-width : 540px) {
+    h2{
+        font-size: 3vw;
+        margin-bottom: 1.5rem;
+    }
+    .section-container{
+        min-width: 30vw;
+        padding: 2rem;
+    }
+    .input-container{
+        font-size:3vw; 
+    }
+    input{
+        font-size: 3vw;
+    }
+    .select-container{
+        height: 2.5rem;
+    }
+    .msg{
+        margin-top: 2.2rem ;
+        font-size: 3vw;
+    }
+    .icon>i{
+        font-size: 3vw;
+    }
+    select, option{
+        font-size: 2.5vw;
+    }
+    button{
+        margin-top: 1.5rem;
+        font-size:3vw;
+    }
+    .placeholder, .from-name, .to-name{
+        font-size: 3.2vw;
+    }
+}
+@media only screen and (max-width : 440px) {
+    h2{
+        font-size: 3.6vw;
+        margin-bottom: 1.5rem;
+    }
+    .section-container{
+        min-width: 28vw;
+        padding: 2rem;
+    }
+    .input-container{
+        font-size:3.5vw; 
+    }
+    input{
+        font-size: 3.5vw;
+    }
+    .select-container{
+        height: 2.5rem;
+    }
+    .msg{
+        margin-top: 2.2rem ;
+        font-size: 3.5vw;
+    }
+    .icon>i{
+        font-size: 3.5vw;
+    }
+    select, option{
+        font-size: 2.5vw;
+    }
+    button{
+        margin-top: 1.5rem;
+        font-size:3.5vw;
+    }
+    .placeholder, .from-name, .to-name{
+        font-size: 3.5vw;
+    }
+}
+@media only screen and (max-width : 340px) {
+    h2{
+        font-size: 4vw;
+        margin-bottom: 1.5rem;
+    }
+    .section-container{
+        min-width: 15vw;
+        padding: 2rem;
+    }
+    .input-container{
+        font-size:3.5vw; 
+    }
+    input{
+        font-size: 3.5vw;
+    }
+    .select-container{
+        width: 6rem;
+        height: 2.2rem;
+    }
+    .msg{
+        margin-top: 2.2rem ;
+        font-size: 4vw;
+    }
+    .icon>i{
+        font-size: 3.5vw;
+    }
+    select, option{
+        font-size: 2.5vw;
+    }
+    button{
+        margin-top: 1.5rem;
+        font-size:3.8vw;
+    }
+    .placeholder, .from-name, .to-name{
+        font-size: 4vw;
+    }
+}
+@media only screen and (max-width : 265px) {
+    h2{
+        font-size: 4vw;
+        margin-bottom: 1.5rem;
+    }
+    .section-container{
+        min-width: 13vw;
+        padding: 1.5rem;
+    }
+    .input-container{
+        font-size:3.5vw; 
+    }
+    input{
+        font-size: 3.5vw;
+    }
+    .select-container{
+        width: 5rem;
+        height: 2rem;
+    }
+    .select-container img{
+        min-width: 3rem;
+    }
+    .placeholder, .from-name, .to-name{
+        font-size: 4.5vw;
+    }
+}
