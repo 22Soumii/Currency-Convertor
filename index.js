@@ -68,3 +68,14 @@ const msg = document.querySelector(".msg");
   window.addEventListener ("load", ()=>{  // Update current exchange rate
     updateExchangeRate();
   });
+
+  // scroll reveal
+
+  ScrollReveal({ 
+    reset: true,
+    distance: '100px',
+    duration: 2000,
+    delay: 150
+  });
+
+  ScrollReveal().reveal(' .section-container', { origin: 'left' });
